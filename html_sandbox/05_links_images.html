@@ -7,25 +7,29 @@
   <title>Links & Images</title>
 </head>
 <body>
-  <!-- External link -->
+  <!-- External link (linking to ext websites)-->
   <p>
     <!-- Every a tag comes with href attribute as it gives the location that we are linking to -->
     <a href="http://google.com">Click For Google</a>
   </p>
   <p>
-    <!-- taarget attribute is used to open -->
+    <!-- target attribute with blank is used to open the link in a different tab-->
     <a href="http://google.com" target="_blank">Click For Google</a>
   </p>
 
-  <!-- Internal link -->
+  <!-- Internal link (linking other pages from the folder that will be part of our website)-->
   <p>
+    <!-- we use just the / here since we are in the same folder -->
     <a href="/04_typography.html">Typography</a>
   </p>
 
-  <!-- Local image -->
+  <!-- Local image (local since it is in our folder structure)-->
+  <!-- we use alt to display a text in case the image does not load on the website -->
+  <!-- ideally we should not add width here and do styling in css -->
   <img src="/images/sample.jpg" alt="My Image" width="200">
 
-  <!-- Remote image -->
+  <!-- Remote image (getting images form some ohter website ) -->
+  <!-- unslpash is a good website for images, we can change the size and replace building with ocean etc and get new images (this is only because unsplash provides this facility) -->
   <img src="https://source.unsplash.com/200x200/?building" alt="My Image 2">
 </body>
 </html>
