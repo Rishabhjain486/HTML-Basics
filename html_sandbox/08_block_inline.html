@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inline vs Block</title>
 </head>
+
 <body>
+  <!-- BLock level elements go across whole page and pushes next tag onto the next line -->
   <p style="border:2px green solid">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga doloribus aperiam dicta <strong>voluptatibus ut, quisquam</strong> aut perferendis sequi, ad ullam quae eius eveniet nihil? Ab ipsam praesentium voluptatum dolorem temporibus.</p>
   <p style="border:2px green solid">Lorem</p>
+  
+  <!-- In line elements do not span all the way across -->
+  <a style="border:2px red solid" href="#">A Link</a>
+  <a style="border:2px red solid" href="#">A Link</a>
 
-  <a style="border:2px red solid" href="#">A Link</a>
-  <a style="border:2px red solid" href="#">A Link</a>
+  <!-- borders added to understand visually - but styling should be strictly in CSS -->
+
+  <!-- lists and list items are also Block level -->
   <ul>
     <li>Item</li>
     <li>Item</li>
   </ul>
 </body>
 </html>
+ 
+<!-- 
+  NOTES
+  1. refer https://www.w3schools.com/html/html_blocks.asp to read about block and inline elements
+  2. we can convert block level elements to inline and vice versa using CSS
+ -->

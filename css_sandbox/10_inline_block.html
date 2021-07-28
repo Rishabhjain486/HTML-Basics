@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- we will learn how to convert block level elements to inline and vice versa -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +10,7 @@
   <title>Inline & Block Styling</title>
   <style>
     li {
+      /* converting block to inline */
       display: inline;
     }
 
@@ -15,20 +19,23 @@
     }
 
     img {
+      /* converting inline to block */
       display: block;
-      margin: auto;
+      margin: auto; /* this works only on block level elements */
     }
 
     .box {
       width: 32.8%;
       display: inline-block;
-      box-sizing: border-box;
+      box-sizing: border-box; /* usually put at start with *, but can be put here too */
       background: #f4f4f4;
       padding: 20px;
       margin-bottom: 15px;
+      /* (line 29) display:inline will not work, since width amd margin do not work with inline elements. So inline-block is used to make the divs inline but also retain the block level properties for the margin and width */
     }
   </style>
 </head>
+
 <body>
   <ul>
     <li><a href="#">Technology</a></li>
@@ -46,10 +53,12 @@
     <h3>Heading</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!</p>
   </div>
+
   <div class="box">
     <h3>Heading</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!</p>
   </div>
+
   <div class="box">
     <h3>Heading</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!</p>

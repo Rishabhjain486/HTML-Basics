@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Forms & Input</title>
 </head>
+
 <body>
+  <!-- action is where the form gets submitted to -->
   <form action="process.php">
+
     <!-- Text -->
     <div>
+      <!-- value of for attribute needs to match the id of the input. Why? when the value is same, clicking on the label will highlight the text field -->
       <label for="name">Name</label><br>
+      <!-- name attribute of input type is used on the server side to grab the value -->
+      <!-- value attribute will have the text field pre filled with its value -->
       <input type="text" id="name" name="name" value="John Doe">
     </div>
+
     <!-- Email -->
     <div>
       <label for="email">Email</label><br>
+      <!-- EMMET shortcut - input:email will create input tag with attribute type email-->
+      <!-- placeholder attribute will have the text field pre filled with a message (not as value) and it goes away when you click on it -->
       <input type="email" name="email" id="email" placeholder="Enter an email">
     </div>
-    <!-- Textarea -->
+
+    <!-- Text  area - it has its own tag -->
     <div>
       <label for="message">Message</label><br>
       <textarea name="message" id="message" cols="50" rows="5"></textarea>
     </div>
-    <!-- Select -->
+
+    <!-- Select - it has its own tag -->
     <div>
       <label for="sex">Sex</label>
       <select name="sex" id="sex">
         <option value="male">Male</option>
+        <!-- selected attribute will have this option selected by default -->
         <option value="female" selected>Female</option>
         <option value="other">Other</option>
       </select>
     </div>
+
     <!-- Number -->
     <div>
       <label for="age">Age</label><br>
       <input type="number" name="age" id="age">
     </div>
+
     <!-- Date -->
     <div>
       <label for="bithdate">Birthdate</label><br>
       <input type="date" name="birthdate" id="birthdate">
     </div>
+
     <!-- Radio -->
     <div>
       <label for="membership">Membership</label>
       <input type="radio" name="membership" value="simple" id="membership"> Simple
+      <!-- checked attribute will make this option be selected by default -->
       <input type="radio" name="membership" value="standard" id="membership" checked> Standard
       <input type="radio" name="membership" value="super" id="membership"> Super
     </div>
+
     <!-- Checkbox -->
     <div>
       <label for="membership">I Like..</label>
@@ -56,11 +74,20 @@
       <input type="checkbox" name="likes" value="car" id="likes"> Car
       <input type="checkbox" name="likes" value="boat" id="likes"> Boat
     </div>
+
     <!-- Input submit -->
-    <input type="submit" value="Submit">
-    <!-- Button submit -->
-    <!-- <button type="submit">Submit</button> -->
+    <input type="submit" value="Submit"><br>
+
+    <!-- Button submit and reset -->
+    <button type="submit">Submit</button>
     <button type="reset">Reset</button>
+    <!-- note: button is not a self closing tag like input -->
   </form>
+
 </body>
 </html>
+
+<!-- 
+  NOTES:
+  1. div tags are divisions - used to make divisions in the markup which can be used in certain ways
+ -->

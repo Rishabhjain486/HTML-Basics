@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,16 +20,20 @@
     }
   </style>
 </head>
+
 <body>
   <div id="main-header" class="card">
+    <!-- Reminder: good practice to have only one h1 tag per page -->
     <h1>My Website</h1>
     <p>A site about me</p>
   </div>
+
   <ul id="main-nav">
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
+
   <div id="about" class="card">
     <h3>About</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit <span class="enhance">expedita quae, molestias magnam recusandae ducimus</span> dolore itaque sit dolores error qui repudiandae aliquam nam? Ad, tempore amet voluptate enim itaque minima quasi quae esse quis incidunt sint provident sapiente aspernatur!</p>
@@ -44,7 +49,20 @@
   </div>
 
   <div id="footer">
-    <p>Copyright &copy; 2019</p>
+    <p>Copyright &copy; 2021</p>
   </div>
+  <!-- &copy adds the copyright symbol -->
 </body>
 </html>
+
+<!-- 
+  NOTES:
+  1. div is a block level element
+  2. divs are used for:
+     a. semantics
+     b. to separate content of the page
+     c. for styling in CSS with the help of ID and CLASS attributes
+  3. When to use and ID and when to use a CLASS (since both have no functional difference):
+     a. ID: Good practice to have unique value for ID attributes (irrespective of which tag it belongs to)
+     b. CLASS: a class can be repeated and is generally used in styling where we can style multiple sections together (like in this code)
+ -->

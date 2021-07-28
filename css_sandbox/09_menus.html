@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
 
     .navbar li {
       float: left;
+      /* when we add this float, the background disappears is we do not have the overflow: auto set above (line 21) */
     }
 
     .navbar li a {
@@ -29,6 +31,8 @@
       color: #fff;
       text-decoration: none;
       padding: 15px 20px;
+      /* we can add padding since we used display: box */
+      /* some ppl put padding on the li above (line 24), but that doesnt look very nice */
     }
 
     .navbar li a:hover {
@@ -38,7 +42,7 @@
 
     /* Side Menu Styling */
     .side-menu {
-      list-style: none;
+      list-style: none; /* removes the default bullets */
       border: 1px #ddd solid;
       border-radius: 10px;
       width: 300px;
@@ -52,10 +56,11 @@
     }
 
     .side-menu li:last-child {
+      /* this is done to target the last list item (to remove the bottom border for last li) */
       border: none;
     }
 
-    .side-menu li a {
+    .side-menu li a { 
       color: #333;
       text-decoration: none;
     }
@@ -65,6 +70,7 @@
     }
   </style>
 </head>
+
 <body>
   <ul class="navbar">
     <li><a href="#">Home</a></li>
@@ -72,7 +78,9 @@
     <li><a href="#">Services</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
+
   <br><br>
+
   <ul class="side-menu">
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>

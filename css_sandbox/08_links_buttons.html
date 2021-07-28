@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,32 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    /* styling the a tag */
     a {
+      /* changing the color of link from teh default blue */
       color: #333;
+      /* removing the default link underline */
       text-decoration: none;
     }
 
+    /* pseudo selectors */
     a:hover {
+      /* performs specified functions when we hover over link */
       color: coral;
     }
 
-    /* a:visited {
-      color: red;
-    } */
-
-    a:active {
+    a:visited {
+      /* performs specified functions after visiting the link */
       color: red;
     }
 
+    a:active {
+      /* performs specified funcitons while clicking (or on click and hold) */
+      color: rgb(0, 255, 76);
+    }
+
     /* Button Styling */
+    /* styling both the a tag and button tag using btn class (will override a tag styling done above) | we learn how to style a link as a button */
     .btn {
       background: #4c6ca0;
       color: #fff;
@@ -36,6 +45,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
+      /* on links, cursor turns into a hand pointer by default, but not for button. cursor: pointer will make this happen even for the button */
     }
 
     .btn:hover {
@@ -44,10 +54,12 @@
     }
   </style>
 </head>
+
 <body>
   <br>
   <a class="btn" href="#">My Link</a>
   <br>
+
   <br>
   <button class="btn">My Button</button>
 </body>

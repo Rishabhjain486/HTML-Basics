@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <title>Fonts</title>
   <style>
     body {
+      /* font-family affects the font on the whole page */
       font-family: Arial, Helvetica, sans-serif;
       font-size: 18px;
       line-height: 1.6em;
@@ -22,14 +24,33 @@
     }
   </style>
 </head>
+
 <body>
     <div id="welcome">
         <h2 class="primary-heading">Welcome</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Quod qui iusto perferendis nisi officia quidem ad enim</span> maiores animi maxime.</p>
       </div>
+
       <div id="about">
         <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span>Eveniet laudantium voluptatum dolorum iure,</span> eos et distinctio porro provident ut assumenda.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Eveniet laudantium voluptatum dolorum iure,</span> eos et distinctio porro provident ut assumenda.</p>
       </div>
 </body>
 </html>
+
+<!-- 
+  NOTES:
+  1. WEB SAFE FONTS:
+     a. These fonts can be used on any browser without having to link font files (used in line 13)
+     b. https://www.w3schools.com/cssref/css_websafe_fonts.asp 
+     c. We are using fall back fonts here, ie, if one font is not available, it will look for another font that is mentioned
+  2. Linking to EXTERNAL FONTS:
+     a. https://fonts.google.com/ - pick a font and it will give us the link and tell how to implement
+     b. Link used in line 8
+     c. (To view the Roboto font, replace the value in font-family with roboto)
+  3. Default FONT SIZE is 16px set by the HTML Tag
+  4. CSS Units - absolute and relative:
+     a. https://www.w3schools.com/cssref/css_units.asp 
+     b. Absolute units: dont worry about it too much, pixels is the one that is used most
+     c. relative units: will be discussed later. %, em, rev are mostly used
+ -->

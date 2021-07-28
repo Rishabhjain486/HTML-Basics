@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      box-sizing: border-box; /* So that padding is not added to box width */
     }
 
     .box {
@@ -54,11 +55,23 @@
       }
   </style>
 </head>
+
+<!-- 
+  NOTES:
+  1. open DevTools in chrome to visualise the padding, border and margin
+  2. browser adds margin and padding by default for some elements (which we can overwrite with CSS)
+  3. CSS RESET is used to delete all the defaults done by browser (its usage depends on the styling being done, but then we will have to take care of each and every style)
+  4. here the space between the box is achieved with the margin (unlike the br tag in prev code)
+  5. if we describe the same style property again, they override the style defined above it (ie the padding and margin defined in lines 35 & 50 will override the values defined before them resp | that is why the earlier one has not been commented)
+  6. box-sizing: border-box -> Difficult to summarise, Read here https://www.w3schools.com/css/css3_box-sizing.asp 
+ -->
+
 <body>
   <div class="box">
     <h3>Box One</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla beatae id, dolorum accusamus neque atque similique consectetur eaque odio?</p>
   </div>
+
   <div class="box">
     <h3>Box Two</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla beatae id, dolorum accusamus neque atque similique consectetur eaque odio?</p>

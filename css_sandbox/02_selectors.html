@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,27 +23,34 @@
     }
 
     /* Multiple Selectors */
+    /* selecting the divs of welcome and about both */
     #welcome, #about {
-      border: 1px solid #ccc;
+      border: 2px solid red;
       padding: 10px;
       margin-bottom: 5px;
     }
 
     /* Nested Selectors */
+    /* selecting the p tag inside the welcome div */
     #welcome p {
       font-size: 20px;
     }
 
+    /* putting comma makes it Multiple Selector and putting space makes it Nested Selector */
+
+    /* changing the font color of about since the backgorund of page is dark */
     #about {
       color: white;
     }
   </style>
 </head>
+
 <body>
   <div id="welcome">
     <h2 class="primary-heading">Welcome</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui iusto perferendis nisi officia quidem ad enim maiores animi maxime.</p>
   </div>
+
   <div id="about">
     <h2>About</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium voluptatum dolorum iure, eos et distinctio porro provident ut assumenda.</p>

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- External CSS -->
+  <!-- rel attribute tells us what kind of link it is -->
   <link rel="stylesheet" href="css/style.css">
   <title>Implementing CSS</title>
   <style>
@@ -11,8 +14,10 @@
     h2 {
       color: green;
     }
+    /* Notice that comment syntax for CSS is different - VS Code handles it automatically */
   </style>
 </head>
+
 <body>
   <!-- Inline CSS -->
   <h1 style="color:red">Heading One</h1>
@@ -20,3 +25,11 @@
   <h3>Heading Three</h3>
 </body>
 </html>
+
+<!-- 
+  NOTES:
+  1. Three ways of implementing CSS:
+     a. Inline CSS - not recommended at all: Styling should be kept out of the Markup (Separation of Concerns)
+     b. Internal CSS - this used in the course for ease of understanding
+     c. External CSS - PREFFERED - we can link multiple files too
+ -->

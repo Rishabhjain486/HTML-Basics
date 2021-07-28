@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +38,7 @@
       text-align: right;
       text-align: center;
       text-align: justify;
+      /* each overrides the prev one */
     }
 
     #box-2 {
@@ -50,16 +52,32 @@
     }
   </style>
 </head>
+
+<!-- 
+  NOTES:
+  1. Usually for aligning, Flexbox or CSS Grid (complicated and new - taught later)
+  2. div with class "container", "wrap" or "wrapper" is seen often
+     a. Websites today have everything centered - to do this we give the value of margin as auto
+     b. all the divs (or semantics) where this (or any common styling) has to be done is wrapped in a container (or wrapper)
+     c. always use "max-width" in the containers instead of just "width" for responsive design
+  3. Floats are not to be used now, flexbox or css grid is used. But we should know it
+  4. when we use float, we need to give a width - and give in % since px can get messy
+  5. a utility class .clr was created to clear the floats (line 85). If this is not done, then the next div would go under it (comment the clr and try)
+  6. 
+ -->
+
 <body>
   <div class="container">
     <div id="box-1" class="box">
       <h3>Heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi veritatis illo impedit minus unde.</p>
     </div>
+
     <div id="box-2" class="box">
       <h3>Heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi veritatis illo impedit minus unde.</p>
     </div>
+
     <div id="box-3" class="box">
       <h3>Heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi veritatis illo impedit minus unde.</p>
