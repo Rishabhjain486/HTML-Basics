@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility, Order of Precedence & Negative Margins</title>
+    <style>
+        h1 {
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        
+        .order1{
+            color: royalblue;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        h3 {
+            color: salmon !important;
+        }
+
+        .order2 {
+            color: seagreen;
+        }
+
+        h4 {
+            margin-left: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="NOTES">
+        <h1>Visibility</h1>
+        <p>1. display: none; -  makes the element go away completely. This comes in handy while making responsive websites where we may want to hide certain things when the website is access on a mobile device <br> 2. visibility: hidden; - similar to display none property, but the difference here is that the space of the block stays there where as in display none the whole thing goes completely <br> 3. So the display none is used more often than the visibility hidden property</p>
+        
+        <h2 class="order1">Oder of precedence</h2>
+        <p>The styling which is done later overrides the styling done above. But this is not the case always. <br> the element called in the style using class or id gets a higher precednece over the style done by calling the elenment directly <br> In the above example even though the h3 tag is called after the style done using the id, it does not register that style</p>
+
+        <h3 class="order2">Overriding the order of precedence</h3>
+        <p>We can override the order of precedence (or override another style called externally or something) by using the important flag <br> So even thought the style using the class order2 has a higher precedence, we have overridden it using the important flag <br> now no matter what else is there, the style with the important flag will get the precedence</p>
+
+        <h4>Negative margins</h4>
+        <p>These are rarely ever used <br> we can give a -ve value to the margin and the element will go in the opposite direction (ie outside the page) <br> we can give negative top bottom left etc values <br> this does not work on the padding, padding doesnt take -ve values</p>
+
+    </div>
+
+</body>
+</html>

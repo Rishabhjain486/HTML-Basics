@@ -9,6 +9,7 @@
   <style>
     body {
       height: 4000px;
+      /* added so that we can scroll down */
     }
 
     .box {
@@ -52,12 +53,26 @@
 
     #box-5 {
       position: sticky;
-      top: 0;
+      top: 0; /* where we want to stick it */
       background: orange;
       z-index: -1;
     }
   </style>
 </head>
+
+<!-- 
+  NOTES:
+  1. By default the Position is static
+  2. Static: not affected by tblr (top, bottom, left, right) properties/ values
+  3. Relative: tblr values cause element to be moved from its normal position
+  4. Absolute: positioned relative to its parent element that is postitioned "relative"
+  5. Fixed: positioned relative to the viewport (ie the browser window)
+  6. Sticky: position based on the scroll location (where once we scroll down the object sticks to the top of the window - like some menu we wish to display even when user scrolls)
+  7. z-index: (used in line 30): when the container box was made, the red box went behind it. To bring it back on top, z-index is used
+  8. value of the z-index is like step out of the screen. If container is given z-index: 2, then it will come on top of red box as 2 is above 1. Same way, it can even have -ve values
+  9. when blue box is given position as fixed, you will notice that the orange box dissapears. it goes under the blue box. this is because when it was given fixed, it was taken out of the flow of the document and brought on top
+  10. nowadays this way of positioning is not used very much as it is important for websites to be responsive so that they look good on mobile devices too
+ -->
 
 <body>
   <div id="box-1" class="box"></div>
