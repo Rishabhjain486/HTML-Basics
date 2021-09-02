@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form by Moi</title>
+
+    <style> 
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #334a72;
+        }
+        
+        .container{
+            max-width: 375px;
+            margin: 30px auto;
+            padding: 10px;
+        }
+        
+        .header{
+            text-align: center;
+            color: #fff;
+        }
+        
+        .form-wrap{
+            background-color: #daf8e3;
+            padding: 20px;
+            padding-bottom: 1px;     
+            padding-top: 1px;
+            border: #ddd 1px solid;
+            border-radius: 5px;
+        }
+        
+        .form-wrap h2, .form-wrap p{
+            text-align: center;
+        }
+        
+        .form-wrap p{
+            padding-bottom: 10px;
+        }
+        
+        .form-elements{
+            padding-bottom: 10px;
+        }
+
+        .form-elements label{
+            display: block;
+        }
+
+        .form-elements input{
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .form-elements, #confirm-password{
+            margin-bottom: 20px;
+        }
+        
+        .btn{
+            display: block;
+            width: 100%;
+            padding: 5px;
+            cursor: pointer;
+            background-color: #49c1a2;
+            color: #fff;
+        }
+        
+        .btn:hover{
+            background: #37a08e;
+        }
+        
+        a{
+            text-decoration: none;  
+        }
+        
+        .tnc{
+            margin-top:30px;
+        }
+        
+        footer{
+            text-align: center;            
+            color: #fff;
+        }
+        /* modifications remaining: changing the fonts */
+        /* adding comments as part of good coding practices */
+        </style>
+
+</head>
+
+<body>
+    <main class="container">
+        
+        <header class="header">
+        <h1 class="title">Welcome to my Form</h1>
+        </header>
+
+        <section class="form-wrap">
+            <h2 class="form-heading">Sign Up!</h2>
+            <p>It's completely FREE and only takes a minute :)</p>
+
+            <form action="#">
+                <div id="first-name" class="form-elements">
+                    <label for="first-name">First Name</label>
+                    <input type="text">
+                </div>
+                <div id="last-name" class="form-elements">
+                    <label for="last-name">Last Name</label>
+                    <input type="text">
+                </div>
+                <div id="email" class="form-elements">
+                    <label for="email">Email</label>
+                    <input type="email">
+                </div>
+                <div id="password" class="form-elements">
+                    <label for="password">Password</label>
+                    <input type="password">
+                </div>
+                <div id="confirm-password" class="form-elements">
+                    <label for="password">Confirm Password</label>
+                    <input type="password">
+                </div>
+
+                <button type="submit" class="btn">SIGN UP</button>
+
+                <p class="tnc">
+                    By clicking the Sign Up button, you agree to our
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </section>
+        
+        <footer class="footer">
+            <p>Already have an account? <a href="#">Login Here</a></p>
+        </footer>
+    </main>
+        
+</body>
+</html>
